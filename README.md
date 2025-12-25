@@ -1,1 +1,23 @@
-# Iran-district-municipality-Geo-Json
+# نقشه مناطق شهرداری شهرهای ایران / Iran Administrative Districts GeoJSON
+
+## فارسی 🇮🇷
+
+این مخزن شامل فایل GeoJSON مناطق **شهرداری و نواحی داخلی شهرهای ایران** است که از OpenStreetMap (OSM) از طریق Overpass Turbo استخراج شده است.
+
+### محتویات
+- `iran_districts.geojson` : فایل GeoJSON حاوی Polygon مناطق ایران
+- اطلاعات هر منطقه شامل:
+  - `name`: نام منطقه به فارسی
+  - `admin_level`: سطح اداری (شهرداری، ناحیه)
+  - `city`: نام شهر
+  - `source`: منبع داده (OSM / Overpass Turbo)
+
+### نحوه استفاده
+- **Kepler.gl**: Drag & Drop فایل GeoJSON → ایجاد Layer نوع GeoJSON → Visualize و Filter
+- **Power BI Shape Map**: Import GeoJSON → Join با داده‌های تحلیلی → Choropleth Map یا Heatmap
+
+### توجه
+- داده‌ها از OSM استخراج شده‌اند، ممکن است مناطق برخی شهرهای کوچک ناقص باشند.
+- لطفاً اگر از داده‌ها استفاده می‌کنید، منبع را ذکر کنید:
+```text
+Source: OpenStreetMap contributors, data extracted via Overpass Turbo
